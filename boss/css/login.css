@@ -1,0 +1,117 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,input,textarea,select,td,th{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+/* ------------ */
+/* main */
+body{
+	width: 100%;
+}
+.main{
+	width: 345px;
+	margin: 0 auto;
+}
+h3{
+	color: #7DDDD5;
+	font-size: 26px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.div-select{
+	width: 346px;
+	height: 23px;
+	padding-top: 8px;
+	padding-bottom: 15px;
+	margin-bottom: 44px;
+}
+#span-left,#span-right{
+	display: inline-block;
+	width: 173px;
+	height: 45px;
+	text-align: center;
+	
+}
+.div-select #span-left{
+	border-bottom: 2px solid #5BD4C7;
+}
+#span-right{
+	float: right;
+	border-bottom: 2px solid darkgray;
+}
+.inp{
+	display: inline-block;
+	width: 345px;
+	height: 42px;
+	border: 1px solid gray;
+	line-height: 42px;
+	margin-bottom: 30px;
+}
+
+.span-tel .icon-phone{
+	display: inline-block;
+	font-size: 22px;
+	margin: 0 10px 0 10px;
+}
+.icon-select-arrow{
+	font-size: 16px;
+}
+.span-tel input{
+	display: inline-block;
+	border: 0;
+	padding: 9px 18px 9px 0;
+}
+.span-pwd input{
+	display: inline-block;
+	border: 0;
+	padding: 9px 18px 9px 0;
+}
+.verify-input{
+	text-align: center;
+	font-size: 16px;
+	color: #aaaaaa;
+	position: relative;
+}
+.btn-arrow{
+	width: 48px;
+	height: 42px;
+	background: white;
+	position: absolute;
+	top: 0px;
+	border-right: 1px solid lightgrey;
+}
+.input-login{
+border: none;
+margin-bottom: 24px;
+}
+.input-login input{
+	display:inline-block;
+	width: 345px;
+	height: 42px;
+	outline: none;
+	border: none;
+	color: white;
+	font-size: 16px;
+	background: #7DDDD5;
+}
+.tip{
+	width: 345px;
+	height: 50px;
+	font-size: 14px;
+}
+.tip .left{
+	float: left;
+	padding-left: 30px;
+}
+.tip .tip-right{
+	float: right;
+}
+.tip-right a{
+	color: #7DDDD5;
+}

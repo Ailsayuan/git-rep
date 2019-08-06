@@ -1,0 +1,132 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,input,textarea,select,td,th{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+/* ------------ */
+/* main */
+body{
+	width: 100%;
+}
+.main{
+	width: 345px;
+	margin: 0 auto;
+}
+h3{
+	color: #7DDDD5;
+	font-size: 26px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.inp{
+	display: inline-block;
+	width: 345px;
+	height: 42px;
+	border: 1px solid gray;
+	line-height: 42px;
+	margin-bottom: 30px;
+}
+.span-tel .icon-phone{
+	display: inline-block;
+	font-size: 22px;
+	margin: 0 10px 0 10px;
+}
+.icon-select-arrow{
+	font-size: 16px;
+}
+.span-tel input{
+	display: inline-block;
+	border: 0;
+	outline: none;
+	padding: 9px 18px 9px 0;
+	
+}
+.span-tel span{
+	font-size: 14px;
+}
+
+
+.verify-input{
+	text-align: center;
+	font-size: 16px;
+	color: #aaaaaa;
+	position: relative;
+}
+.btn-arrow{
+	width: 48px;
+	height: 42px;
+	background: white;
+	position: absolute;
+	top: 0px;
+	border-right: 1px solid lightgrey;
+}
+.verify-code{
+	/* position: relative; */
+}
+.verify-code img{
+	display: inline-block;
+	margin-left: 7px;
+	margin-right: 7px;
+	width: 20px;
+	height: 20px;
+	padding-top: 15px;
+}
+.phone{
+	float: right;
+	display: inline-block;
+	/* position: absolute; */
+	/* top:0; */
+	width: 310px;
+}
+.input-phone-verify{
+	vertical-align: middle;
+	width: 201px;
+	border: none;
+}
+.phone-verify-code{
+	float: right;
+	vertical-align: middle;
+	width: 104px;
+	height: 42px;
+	color: #7DDDD5;
+	border: none;
+	border-left: 1px solid black;
+	background: #F5F8F9;
+}
+
+.input-register{
+border: none;
+}
+.input-register input{
+	display:inline-block;
+	width: 345px;
+	height: 42px;
+	outline: none;
+	border: none;
+	color: white;
+	font-size: 16px;
+	background: #7DDDD5;
+}
+
+.tip{
+	width: 345px;
+	height: 50px;
+}
+.tip input{
+	margin: 7px 3px 0 30px;
+}
+.tip p{
+	display: inline;
+	color: #AAAAAA;
+	font-size: 14px;
+}
+.tip a{
+	color: #1AC9C7;
+	font-size: 14px;
+}

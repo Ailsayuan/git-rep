@@ -1,0 +1,143 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,input,textarea,select,td,th{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+/* 顶部底部固定时候需要 */
+html,body{
+	height: 100%;
+}
+/* 写混合布局或者是移动端的布局才去用rem */
+/* 
+html{
+	font-size: 26.67vw;
+} */
+/* 百分百布局:量的高宽/2就可以 */
+/* header */
+header{
+	width: 100%;
+	height: 196px;
+	background: url(../img/home-bg.png);
+	background-size: cover;
+}
+.home-banner{
+	background: url(../img/home-search-text.png) center 38px no-repeat;
+	background-size: 252px auto;
+	height: 138px;
+}
+.header-box{
+	margin-left: 15px;
+	margin-right: 15px;
+	position: relative;
+}
+.input-search{
+	width: 300px;
+	height: 37px;
+	border: 0;
+	border-radius: 20px;
+	padding-left:20px;
+}
+.btn-search{
+	width: 60px;
+	height: 34px;
+	background: white;
+	border: 0;
+	position: absolute;
+	left: 245px;
+	color: #5bd4c7;
+}
+/* content */
+.content{
+	width: 100%;
+	height: 542px;
+	overflow-y: auto;
+}
+/* article */
+article{
+	
+}
+dl{
+	padding: 18px 0 16px;
+}
+.dt-title{
+	margin: 0 15px 18px;
+}
+.dt-title img{
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+.dt-title h4{
+	color: #404855;
+	font-size: 15px;
+	display: inline-block;
+	width: 232.2px;
+	height: 25.6px;
+	margin-top: 14px;
+}
+dd{
+	margin: 0 15px;
+}
+dd a{
+	color: #7e8793;
+	font-size: 13px;
+	display: inline-block;
+	padding: 8px 16px;
+	background: #f5f8f9;
+	border-radius: 10px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+/* tips */
+.tips{
+
+	padding: 20px 0;
+}
+.tips p{
+	color: grey;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+}
+/* footer */
+footer{
+	background: #1ac9c7;
+	width: 100%;
+	height: 57px;
+}
+.footer-left{
+	float: left;
+	width: 252.2px;
+	margin-left: 18px;
+}
+footer img{
+	width: 42px;
+	height: 42px;
+	margin-right: 10px;
+	margin-top: 7px;
+}
+footer p{
+	display: inline-block;
+	font-size: 14px;
+	color: #f8fefd;
+	line-height: 23px;
+	vertical-align:5px;
+}
+footer span{
+	float: right;
+	width: 81px;
+	height: 32px;
+	background: white;
+	color: #7dddd5;
+	margin: 12px 18px 0 0;
+	border-radius: 15px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 32px;
+}
