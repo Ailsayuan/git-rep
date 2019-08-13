@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head> 
+<body>
+    <div id="app">
+        <!-- 父组件可以在引用子组件的时候通过属性绑定的形式(v-bind) 的形式,把需要传递的数据-以属性绑定的形式,传递到子组件内部供子组件使用-->
+        <com1 v-bind:parentmsg="msg" :hello="hi"></com1>
+    </div>
+</body>
+</html>
+<script src="lib/vue.js"></script>
+<script>
+    //创建vue实例,得到vm
+    let vm = new Vue({
+        el:"#app",
+        data:{
+            msg:"123啦啦啦啦啦啦父组件中的数据",
+            hi:'ooooooooooooooooooooooooo'
+        },
+        components:{
+            com1:{
+                template:`<h1>{{hello}}这是子组件{{parentmsg}}</h1>`,
+                // 把父组件传递过来的parentmsg属性在props数组中定义下,这样才可以使用该数组
+                props:['parentmsg','hello']
+            }
+        }
+    });
+</script>

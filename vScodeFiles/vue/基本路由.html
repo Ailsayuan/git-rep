@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基本路由</title>
+</head>
+<body>
+    <div id="app">
+            <router-link to="/com1"></router-link>
+            <router-link to="/com2"></router-link>
+            <router-view></router-view>
+    </div>
+</body>
+</html>
+<script src="lib/vue.js"></script>
+<script src="lib/vue-router.js"></script>
+<script>
+    const com1 = {
+        data:function(){
+            return{
+
+            }
+        },
+        template:`<p>组件1</p>`
+    };
+    const com2 = {
+        data:function(){
+            return{
+
+            }
+        },
+        template:`<p>组件2</p>`
+    };
+
+    const routes = [
+    {path:'/',redirect:'/com1'},
+    {path:'/com1',component:com1},
+    {path:'/com2',component:com2}
+    ];
+    let router = new VueRouter({
+        routes
+    });
+
+    let vm = new Vue({
+        el:"#app",
+        data:{
+
+        },
+        router
+    });
+</script>

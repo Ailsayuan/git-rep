@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>路由</title>
+</head>
+<body>
+    <div id="app">
+       
+        <router-link to="/login">登录</router-link>
+        <router-link to="/register">注册</router-link>
+        <router-view></router-view>
+    </div>
+</body>
+</html>
+<script src="lib/vue.js"></script>
+<script src="lib/vue-router.js"></script>
+<script>
+    //login组件模板对象
+    var login = {
+        template:`<p>登录组件</p>`
+    }
+    var register = {
+        template:`<p>注册组件</p>`
+    }
+    var routerObj = new VueRouter({
+       //route表示路由匹配规则
+       routes:[
+           {path:'/',redirect:'/login'},//重定向路径
+           {path:'/login',component:login},
+            {path:'/register',component:register}
+       ]
+    });
+
+    var vm = new Vue({
+        el:"#app",
+        data:{},
+        methods:{
+
+        },
+        router:routerObj//将路由规则对象,注册到vm实例中,用来监听url地址变化
+    });
+</script>
